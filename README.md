@@ -19,7 +19,7 @@ arrBooks.each((index, book)=>{
         epub.click();
         } else {
           console.log(`WARNING: No EPUB format for ${$(arrBooks[idx]).html()}`) 
-          $('h4:contains(PDF)').click() 
+          $('h4')[0].click() 
         }
     },
     index*4000, //4 sec delay
